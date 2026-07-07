@@ -1,2 +1,2 @@
 # algos
-Algorithm implementations
+some algorithms, mainly C/C++
