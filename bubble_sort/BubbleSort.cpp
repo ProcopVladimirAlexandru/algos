@@ -1,7 +1,13 @@
 #include <vector>
+#include <string>
 
 #include "BubbleSort.h"
+#include "BaseSort.h"
 
+
+BubbleSort::BubbleSort(const char * uid) : BaseSort(uid) {};
+
+BubbleSort::BubbleSort(std::string uid) :  BaseSort(uid) {};
 
 std::vector<long double> * BubbleSort::get_sorted_vector(std::vector<long double> &v, bool ascending) {
     std::vector<long double> & result = *(new std::vector<long double>(v));

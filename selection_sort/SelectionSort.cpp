@@ -3,6 +3,10 @@
 #include "SelectionSort.h"
 
 
+SelectionSort::SelectionSort(const char * uid) : BaseSort(uid) {};
+
+SelectionSort::SelectionSort(std::string uid) :  BaseSort(uid) {};
+
 std::vector<long double> * SelectionSort::get_sorted_vector(std::vector<long double> &v, bool ascending) {
     std::vector<long double> & result = *(new std::vector<long double>(v));
     long long n = result.size();
