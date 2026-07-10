@@ -80,7 +80,7 @@
 	<string>
 	<sstream>
 
-1783612817 source:/home/invatamintulcea/Documents/algos/testers/SortingTester.cpp
+1783690159 source:/home/invatamintulcea/Documents/algos/testers/SortingTester.cpp
 	<iostream>
 	<string>
 	<sstream>
@@ -89,6 +89,7 @@
 	"SortingTester.h"
 	"BubbleSort.h"
 	"SelectionSort.h"
+	"MergeSort.h"
 	"PVAFile.h"
 	"VectorOperations.h"
 	"BaseSort.h"
@@ -102,4 +103,15 @@
 	"BinarySearch.h"
 	"PVAFile.h"
 	"VectorOperations.h"
+
+1783690204 source:/home/invatamintulcea/Documents/algos/merge_sort/MergeSort.cpp
+	<vector>
+	<string>
+	<cmath>
+	"MergeSort.h"
+
+1783689961 /home/invatamintulcea/Documents/algos/merge_sort/MergeSort.h
+	<vector>
+	<string>
+	"BaseSort.h"
 
