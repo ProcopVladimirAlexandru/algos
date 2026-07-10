@@ -11,7 +11,6 @@
 
 void SearchTester::test(std::string input_file_path) {
     PVAFile pva_file = PVAFile(input_file_path);
-    std::ifstream & instream = pva_file.get_ifstream();
 
     uint i = 0;
     std::vector<long double> input_vector = std::vector<long double>();
