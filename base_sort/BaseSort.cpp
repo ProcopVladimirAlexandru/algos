@@ -1,11 +1,9 @@
 #include "string"
 
 #include "BaseSort.h"
+#include "Algorithm.h"
 
 
-BaseSort::BaseSort(const char * uid) {
-    this->uid = std::string(uid);
-}
-BaseSort::BaseSort(std::string uid) {
-    this->uid = uid;
-}
+BaseSort::BaseSort(const char * uid) : Algorithm(uid) {};
+
+BaseSort::BaseSort(std::string uid) :  Algorithm(uid) {};

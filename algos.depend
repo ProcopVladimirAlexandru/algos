@@ -1,11 +1,13 @@
 # depslib dependency file v1.0
-1783573911 source:/home/invatamintulcea/Documents/algos/base_sort/BaseSort.cpp
+1783882758 source:/home/invatamintulcea/Documents/algos/base_sort/BaseSort.cpp
 	"string"
 	"BaseSort.h"
+	"Algorithm.h"
 
-1783573919 /home/invatamintulcea/Documents/algos/base_sort/BaseSort.h
+1783882815 /home/invatamintulcea/Documents/algos/base_sort/BaseSort.h
 	<vector>
 	<string>
+	"Algorithm.h"
 
 1783614189 source:/home/invatamintulcea/Documents/algos/binary_search/BinarySearch.cpp
 	<iostream>
@@ -18,9 +20,10 @@
 	<vector>
 	<string>
 
-1783611813 source:/home/invatamintulcea/Documents/algos/main.cpp
+1783883062 source:/home/invatamintulcea/Documents/algos/main.cpp
 	"testers/SortingTester.h"
 	"testers/SearchTester.h"
+	"testers/GCDTester.h"
 
 1783520211 /home/invatamintulcea/Documents/algos/testers/SortingTester.h
 	<string>
@@ -58,13 +61,13 @@
 	<string>
 	"BaseSort.h"
 
-1783613517 source:/home/invatamintulcea/Documents/algos/utils/PVAFile.cpp
+1783883190 source:/home/invatamintulcea/Documents/algos/utils/PVAFile.cpp
 	"PVAFile.h"
 	<iostream>
 	<vector>
 	<string>
 
-1783613039 /home/invatamintulcea/Documents/algos/utils/PVAFile.h
+1783883143 /home/invatamintulcea/Documents/algos/utils/PVAFile.h
 	<iostream>
 	<string>
 	<filesystem>
@@ -114,4 +117,31 @@
 	<vector>
 	<string>
 	"BaseSort.h"
+
+1783882907 source:/home/invatamintulcea/Documents/algos/euclid_gcd/EuclidGCD.cpp
+	"EuclidGCD.h"
+	"Algorithm.h"
+
+1783882853 /home/invatamintulcea/Documents/algos/euclid_gcd/EuclidGCD.h
+	"Algorithm.h"
+
+1783882450 source:/home/invatamintulcea/Documents/algos/algorithm/Algorithm.cpp
+	"string"
+	"Algorithm.h"
+
+1783882109 /home/invatamintulcea/Documents/algos/algorithm/Algorithm.h
+	<string>
+
+1783883233 source:/home/invatamintulcea/Documents/algos/testers/GCDTester.cpp
+	<iostream>
+	<string>
+	<sstream>
+	<vector>
+	"GCDTester.h"
+	"EuclidGCD.h"
+	"PVAFile.h"
+	"VectorOperations.h"
+
+1783812518 /home/invatamintulcea/Documents/algos/testers/GCDTester.h
+	<string>
 

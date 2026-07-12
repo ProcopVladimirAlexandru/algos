@@ -13,6 +13,12 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="base_sort" />
+					<Add directory="binary_search" />
+					<Add directory="utils" />
+					<Add directory="selection_sort" />
+					<Add directory="bubble_sort" />
+					<Add directory="insertion_sort" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -31,6 +37,90 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<UnitsGlob directory="../algos" wildcard="" recursive="1" id="2547989141" addToProject="1">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</UnitsGlob>
+		<Unit filename=".gitignore" />
+		<Unit filename="README.md" />
+		<Unit filename="base_sort/BaseSort.cpp">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="base_sort/BaseSort.h">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="binary_search/BinarySearch.cpp">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="binary_search/BinarySearch.h">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="bubble_sort/BubbleSort.cpp">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="bubble_sort/BubbleSort.h">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="euclid_gcd/EuclidGCD.cpp">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="euclid_gcd/EuclidGCD.h">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="insertion_sort/InsertionSort.cpp">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="insertion_sort/InsertionSort.h">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="main.cpp">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="merge_sort/MergeSort.cpp">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="merge_sort/MergeSort.h">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="selection_sort/SelectionSort.cpp">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="selection_sort/SelectionSort.h">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="testers/GCDTester.cpp">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="testers/GCDTester.h">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="testers/SearchTester.cpp">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="testers/SearchTester.h">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="testers/SortingTester.cpp">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="testers/SortingTester.h">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="tests/lcd_tests.txt" />
+		<Unit filename="tests/search_tests.txt" />
+		<Unit filename="tests/sorting_tests.txt" />
+		<Unit filename="utils/PVAFile.cpp">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="utils/PVAFile.h">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="utils/VectorOperations.cpp">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="utils/VectorOperations.h">
+			<Option glob="2547989141" />
+		</Unit>
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

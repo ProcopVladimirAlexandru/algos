@@ -46,6 +46,18 @@ long long PVAFile::parse_line_to_long_long() {
     return el;
 }
 
+unsigned long PVAFile::parse_line_to_unsigned_long() {
+    if (this->eof()) {
+        throw "PVA eof reached";
+    }
+    std::string line;
+    std::getline(this->_instream, line);
+    std::stringstream ss(line);
+    unsigned long el;
+    ss >> el;
+    return el;
+}
+
 long double PVAFile::parse_line_to_long_double() {
     if (this->eof()) {
         throw "PVA eof reached";
