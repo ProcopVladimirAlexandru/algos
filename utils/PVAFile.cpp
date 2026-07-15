@@ -34,6 +34,22 @@ void PVAFile::parse_line_to_vector_long_double(std::vector<long double> & to_fil
     }
 }
 
+void PVAFile::parse_line_to_vector_unsigned_long(std::vector<unsigned long> & to_fill, char separator) {
+    if (this->eof()) {
+        throw "PVA eof reached";
+    }
+    std::string line;
+    std::getline(this->_instream, line);
+    std::stringstream ss(line);
+    unsigned long el;
+    while(ss >> el) {
+        to_fill.push_back(el);
+        if (ss.peek() == separator) {
+            ss.ignore();
+        }
+    }
+}
+
 long long PVAFile::parse_line_to_long_long() {
     if (this->eof()) {
         throw "PVA eof reached";

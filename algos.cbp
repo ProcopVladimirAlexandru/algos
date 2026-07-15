@@ -19,6 +19,8 @@
 					<Add directory="selection_sort" />
 					<Add directory="bubble_sort" />
 					<Add directory="insertion_sort" />
+					<Add directory="euclid_gcd" />
+					<Add directory="algorithm" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -43,6 +45,12 @@
 		</UnitsGlob>
 		<Unit filename=".gitignore" />
 		<Unit filename="README.md" />
+		<Unit filename="algorithm/Algorithm.cpp">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="algorithm/Algorithm.h">
+			<Option glob="2547989141" />
+		</Unit>
 		<Unit filename="base_sort/BaseSort.cpp">
 			<Option glob="2547989141" />
 		</Unit>
@@ -106,7 +114,7 @@
 		<Unit filename="testers/SortingTester.h">
 			<Option glob="2547989141" />
 		</Unit>
-		<Unit filename="tests/lcd_tests.txt" />
+		<Unit filename="tests/gcd_tests.txt" />
 		<Unit filename="tests/search_tests.txt" />
 		<Unit filename="tests/sorting_tests.txt" />
 		<Unit filename="utils/PVAFile.cpp">

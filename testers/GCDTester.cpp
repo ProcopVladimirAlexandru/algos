@@ -13,7 +13,6 @@ void GCDTester::test(std::string input_file_path) {
     PVAFile pva_file = PVAFile(input_file_path);
 
     uint i = 0;
-    std::vector<long double> input_vector = std::vector<long double>();
     unsigned long a;
     unsigned long b;
     unsigned long expected_gcd;

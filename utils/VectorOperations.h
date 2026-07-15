@@ -8,6 +8,21 @@
 
 
 template<class T>
+bool are_vectors_equal(std::vector<T> & v, std::vector<T> & u) {
+    unsigned long n = v.size();
+    unsigned long m = u.size();
+    if (n != m) {
+        return false;
+    }
+    for (unsigned long i = 0; i < n; ++i) {
+        if (v[i] != u[i]) {
+            return false;
+        }
+    }
+    return true;
+}
+
+template<class T>
 std::string vector_to_string(std::vector<T> & v) {
     long long n = v.size();
     std::ostringstream outstream;

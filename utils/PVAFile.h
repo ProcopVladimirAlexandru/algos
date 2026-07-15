@@ -20,6 +20,7 @@ class PVAFile {
         bool eof();
         std::string parse_raw_line();
         void parse_line_to_vector_long_double(std::vector<long double> & to_fill, char separator);
+        void parse_line_to_vector_unsigned_long(std::vector<unsigned long> & to_fill, char separator);
         long long parse_line_to_long_long();
         unsigned long parse_line_to_unsigned_long();
         long double parse_line_to_long_double();
