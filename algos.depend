@@ -20,10 +20,12 @@
 	<vector>
 	<string>
 
-1783883062 source:/home/invatamintulcea/Documents/algos/main.cpp
+1784125695 source:/home/invatamintulcea/Documents/algos/main.cpp
 	"testers/SortingTester.h"
 	"testers/SearchTester.h"
 	"testers/GCDTester.h"
+	"testers/PrimesLessThanNTester.h"
+	"testers/ContinuousKnapsackTester.h"
 
 1783520211 /home/invatamintulcea/Documents/algos/testers/SortingTester.h
 	<string>
@@ -122,7 +124,7 @@
 	"EuclidGCD.h"
 	"Algorithm.h"
 
-1783882853 /home/invatamintulcea/Documents/algos/euclid_gcd/EuclidGCD.h
+1784121864 /home/invatamintulcea/Documents/algos/euclid_gcd/EuclidGCD.h
 	"Algorithm.h"
 
 1783882450 source:/home/invatamintulcea/Documents/algos/algorithm/Algorithm.cpp
@@ -152,7 +154,7 @@
 	"Algorithm.h"
 	"VectorOperations.h"
 
-1784108396 /home/invatamintulcea/Documents/algos/sieve_of_eratosthenes/SieveOfErathosthenes.h
+1784125330 /home/invatamintulcea/Documents/algos/sieve_of_eratosthenes/SieveOfErathosthenes.h
 	<vector>
 	"Algorithm.h"
 
@@ -166,6 +168,30 @@
 	"PVAFile.h"
 	"VectorOperations.h"
 
-1784115992 /home/invatamintulcea/Documents/algos/testers/PrimesLessThanNTester.h
+1784124848 /home/invatamintulcea/Documents/algos/testers/PrimesLessThanNTester.h
+	<string>
+
+1784125641 source:/home/invatamintulcea/Documents/algos/continuous_knapsack/ContinuousKnapsack.cpp
+	<utility>
+	<stdexcept>
+	<algorithm>
+	"ContinuousKnapsack.h"
+	"Algorithm.h"
+
+1784125380 /home/invatamintulcea/Documents/algos/continuous_knapsack/ContinuousKnapsack.h
+	<vector>
+	"Algorithm.h"
+
+1784126151 source:/home/invatamintulcea/Documents/algos/testers/ContinuousKnapsackTester.cpp
+	<iostream>
+	<string>
+	<sstream>
+	<vector>
+	"ContinuousKnapsack.h"
+	"ContinuousKnapsackTester.h"
+	"PVAFile.h"
+	"VectorOperations.h"
+
+1784124873 /home/invatamintulcea/Documents/algos/testers/ContinuousKnapsackTester.h
 	<string>
 

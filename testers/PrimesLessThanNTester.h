@@ -1,5 +1,5 @@
-#ifndef PLTN_H
-#define PLTN_H
+#ifndef PLTNTESTER_H
+#define PLTNTESTER_H
 #include <string>
 
 
