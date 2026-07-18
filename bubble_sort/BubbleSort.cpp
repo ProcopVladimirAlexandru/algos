@@ -13,7 +13,7 @@ std::vector<long double> * BubbleSort::get_sorted_vector(std::vector<long double
     std::vector<long double> & result = *(new std::vector<long double>(v));
     long long n = result.size();
     for (long long j = 0; j < n - 1; ++j) {
-        for (long long i = 0; i < n - 1; ++i) {
+        for (long long i = 0; i < n - j - 1; ++i) {
             bool swap = (ascending && result[i] > result[i + 1]) ||
                             (!ascending && result[i] < result[i + 1]);
             if (swap) {
