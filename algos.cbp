@@ -21,6 +21,7 @@
 					<Add directory="insertion_sort" />
 					<Add directory="euclid_gcd" />
 					<Add directory="algorithm" />
+					<Add directory="show_scheduler" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -69,6 +70,12 @@
 		<Unit filename="bubble_sort/BubbleSort.h">
 			<Option glob="2547989141" />
 		</Unit>
+		<Unit filename="continuous_knapsack/ContinuousKnapsack.cpp">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="continuous_knapsack/ContinuousKnapsack.h">
+			<Option glob="2547989141" />
+		</Unit>
 		<Unit filename="euclid_gcd/EuclidGCD.cpp">
 			<Option glob="2547989141" />
 		</Unit>
@@ -96,16 +103,46 @@
 		<Unit filename="selection_sort/SelectionSort.h">
 			<Option glob="2547989141" />
 		</Unit>
+		<Unit filename="show_scheduler/ShowScheduler.cpp">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="show_scheduler/ShowScheduler.h">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="sieve_of_eratosthenes/SieveOfErathosthenes.cpp">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="sieve_of_eratosthenes/SieveOfErathosthenes.h">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="testers/ContinuousKnapsackTester.cpp">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="testers/ContinuousKnapsackTester.h">
+			<Option glob="2547989141" />
+		</Unit>
 		<Unit filename="testers/GCDTester.cpp">
 			<Option glob="2547989141" />
 		</Unit>
 		<Unit filename="testers/GCDTester.h">
 			<Option glob="2547989141" />
 		</Unit>
+		<Unit filename="testers/PrimesLessThanNTester.cpp">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="testers/PrimesLessThanNTester.h">
+			<Option glob="2547989141" />
+		</Unit>
 		<Unit filename="testers/SearchTester.cpp">
 			<Option glob="2547989141" />
 		</Unit>
 		<Unit filename="testers/SearchTester.h">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="testers/ShowSchedulerTester.cpp">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="testers/ShowSchedulerTester.h">
 			<Option glob="2547989141" />
 		</Unit>
 		<Unit filename="testers/SortingTester.cpp">
@@ -116,6 +153,7 @@
 		</Unit>
 		<Unit filename="tests/gcd_tests.txt" />
 		<Unit filename="tests/search_tests.txt" />
+		<Unit filename="tests/show_scheduler_tests.txt" />
 		<Unit filename="tests/sorting_tests.txt" />
 		<Unit filename="utils/PVAFile.cpp">
 			<Option glob="2547989141" />
