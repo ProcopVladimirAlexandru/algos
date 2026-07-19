@@ -21,7 +21,10 @@
 					<Add directory="insertion_sort" />
 					<Add directory="euclid_gcd" />
 					<Add directory="algorithm" />
-					<Add directory="show_scheduler" />
+					<Add directory="continuous_knapsack" />
+					<Add directory="/home/invatamintulcea/Documents/algos/" />
+					<Add directory="sieve_of_eratosthenes" />
+					<Add directory="merge_sort" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -153,7 +156,6 @@
 		</Unit>
 		<Unit filename="tests/gcd_tests.txt" />
 		<Unit filename="tests/search_tests.txt" />
-		<Unit filename="tests/show_scheduler_tests.txt" />
 		<Unit filename="tests/sorting_tests.txt" />
 		<Unit filename="utils/PVAFile.cpp">
 			<Option glob="2547989141" />

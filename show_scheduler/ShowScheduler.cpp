@@ -30,7 +30,7 @@ bool Show::intersects(const Show& other) {
         return false;
     }
     else if (this->end_hour == other.start_hour) {
-        if (this->end_minute < other.start_minute) {
+        if (this->end_minute <= other.start_minute) {
             return false;
         }
         return true;
@@ -40,7 +40,7 @@ bool Show::intersects(const Show& other) {
             return false;
         }
         else if (this->start_hour == other.end_hour) {
-            if (this->start_minute <= other.end_minute) {
+            if (this->start_minute < other.end_minute) {
                 return true;
             }
             else {
