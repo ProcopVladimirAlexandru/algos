@@ -15,6 +15,9 @@ LISN2::LISN2(std::string uid) :  Algorithm(uid) {};
 
 std::string LISN2::get_lis(std::string s) {
     long long n = s.size();
+    if (n == 0) {
+        return std::string("");
+    }
     std::vector<long long> lis_lengths;
     std::string result;
     std::vector<long long> p;
@@ -50,14 +53,3 @@ std::string LISN2::get_lis(std::string s) {
     }
     return std::string(result.rbegin(), result.rend());
 }
-
-
-/*int main() {
-    LISN2 lis_n2("LISN2");
-    std::string s("ababczde");
-    //std::string lis = LISN2.get_lis(s);
-    long long lis_length = lis_n2.get_lis(s);
-    std::cout << "LIS of \"" << s << "\"" << " is \"" << lis_length << "\"";
-    return 0;
-}
-*/
