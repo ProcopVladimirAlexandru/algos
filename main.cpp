@@ -4,6 +4,7 @@
 #include "testers/PrimesLessThanNTester.h"
 #include "testers/ContinuousKnapsackTester.h"
 #include "testers/ShowSchedulerTester.h"
+#include "testers/LISTester.h"
 
 
 int main() {
@@ -14,6 +15,6 @@ int main() {
     PrimesLessThanNTester().test("./tests/primes_less_than_n_tests.txt");
     ContinuousKnapsackTester().test("./tests/continuous_knapsack_tests.txt");
     ShowSchedulerTester().test("./tests/show_scheduler_tests.txt");
-
+    LISTester().test();
     return 0;
 }

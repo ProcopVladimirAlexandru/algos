@@ -25,6 +25,7 @@
 					<Add directory="/home/invatamintulcea/Documents/algos/" />
 					<Add directory="sieve_of_eratosthenes" />
 					<Add directory="merge_sort" />
+					<Add directory="lis_n2" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -91,6 +92,12 @@
 		<Unit filename="insertion_sort/InsertionSort.h">
 			<Option glob="2547989141" />
 		</Unit>
+		<Unit filename="lis_n2/LISN2.cpp">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="lis_n2/LISN2.h">
+			<Option glob="2547989141" />
+		</Unit>
 		<Unit filename="main.cpp">
 			<Option glob="2547989141" />
 		</Unit>
@@ -128,6 +135,12 @@
 			<Option glob="2547989141" />
 		</Unit>
 		<Unit filename="testers/GCDTester.h">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="testers/LISTester.cpp">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="testers/LISTester.h">
 			<Option glob="2547989141" />
 		</Unit>
 		<Unit filename="testers/PrimesLessThanNTester.cpp">
