@@ -7,8 +7,8 @@ SelectionSort::SelectionSort(const char * uid) : BaseSort(uid) {};
 
 SelectionSort::SelectionSort(std::string uid) :  BaseSort(uid) {};
 
-std::vector<long double> * SelectionSort::get_sorted_vector(std::vector<long double> &v, bool ascending) {
-    std::vector<long double> & result = *(new std::vector<long double>(v));
+std::vector<long double> SelectionSort::get_sorted_vector(std::vector<long double> &v, bool ascending) {
+    std::vector<long double> result(v);
     long long n = result.size();
 
     for (long long i = 0; i < n - 1; ++i) {
@@ -22,5 +22,5 @@ std::vector<long double> * SelectionSort::get_sorted_vector(std::vector<long dou
             }
         }
     }
-    return &result;
+    return result;
 }

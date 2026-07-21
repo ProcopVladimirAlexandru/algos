@@ -85,9 +85,9 @@ std::vector<long double> MergeSort::_get_merge_sorted_vector(
     );
 }
 
-std::vector<long double> * MergeSort::get_sorted_vector(std::vector<long double> &v, bool ascending) {
+std::vector<long double> MergeSort::get_sorted_vector(std::vector<long double> &v, bool ascending) {
     if (v.empty()) {
-        return new std::vector<long double>();
+        return std::vector<long double>();
     }
-    return (new std::vector<long double>(this->_get_merge_sorted_vector(v, ascending, 0, v.size() - 1)));
+    return std::vector<long double>(this->_get_merge_sorted_vector(v, ascending, 0, v.size() - 1));
 }

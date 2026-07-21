@@ -9,8 +9,8 @@ BubbleSort::BubbleSort(const char * uid) : BaseSort(uid) {};
 
 BubbleSort::BubbleSort(std::string uid) :  BaseSort(uid) {};
 
-std::vector<long double> * BubbleSort::get_sorted_vector(std::vector<long double> &v, bool ascending) {
-    std::vector<long double> & result = *(new std::vector<long double>(v));
+std::vector<long double> BubbleSort::get_sorted_vector(std::vector<long double> &v, bool ascending) {
+    std::vector<long double>result(v);
     long long n = result.size();
     for (long long j = 0; j < n - 1; ++j) {
         for (long long i = 0; i < n - j - 1; ++i) {
@@ -23,5 +23,5 @@ std::vector<long double> * BubbleSort::get_sorted_vector(std::vector<long double
             }
         }
     }
-    return &result;
+    return result;
 }

@@ -11,7 +11,7 @@ class SelectionSort : public BaseSort {
     public:
         SelectionSort(const char * uid);
         SelectionSort(std::string uid);
-        std::vector<long double> * get_sorted_vector(std::vector<long double> &v, bool ascending);
+        std::vector<long double> get_sorted_vector(std::vector<long double> &v, bool ascending);
 };
 
 #endif

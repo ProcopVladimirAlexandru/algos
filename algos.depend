@@ -1,10 +1,10 @@
 # depslib dependency file v1.0
-1783882758 source:/home/invatamintulcea/Documents/algos/base_sort/BaseSort.cpp
+1784639634 source:/home/invatamintulcea/Documents/algos/base_sort/BaseSort.cpp
 	"string"
 	"BaseSort.h"
 	"Algorithm.h"
 
-1783882815 /home/invatamintulcea/Documents/algos/base_sort/BaseSort.h
+1784639640 /home/invatamintulcea/Documents/algos/base_sort/BaseSort.h
 	<vector>
 	<string>
 	"Algorithm.h"
@@ -20,7 +20,7 @@
 	<vector>
 	<string>
 
-1784540024 source:/home/invatamintulcea/Documents/algos/main.cpp
+1784633484 source:/home/invatamintulcea/Documents/algos/main.cpp
 	"testers/SortingTester.h"
 	"testers/SearchTester.h"
 	"testers/GCDTester.h"
@@ -28,6 +28,7 @@
 	"testers/ContinuousKnapsackTester.h"
 	"testers/ShowSchedulerTester.h"
 	"testers/LISTester.h"
+	"testers/Knapsack01Tester.h"
 
 1783520211 /home/invatamintulcea/Documents/algos/testers/SortingTester.h
 	<string>
@@ -35,32 +36,32 @@
 1783612989 /home/invatamintulcea/Documents/algos/testers/SearchTester.h
 	<string>
 
-1784131857 source:/home/invatamintulcea/Documents/algos/bubble_sort/BubbleSort.cpp
+1784638488 source:/home/invatamintulcea/Documents/algos/bubble_sort/BubbleSort.cpp
 	<vector>
 	<string>
 	"BubbleSort.h"
 	"BaseSort.h"
 
-1783574073 /home/invatamintulcea/Documents/algos/bubble_sort/BubbleSort.h
+1784638462 /home/invatamintulcea/Documents/algos/bubble_sort/BubbleSort.h
 	<vector>
 	<string>
 	"BaseSort.h"
 
-1783574124 source:/home/invatamintulcea/Documents/algos/insertion_sort/InsertionSort.cpp
+1784638453 source:/home/invatamintulcea/Documents/algos/insertion_sort/InsertionSort.cpp
 	<vector>
 	<string>
 	"InsertionSort.h"
 
-1783574101 /home/invatamintulcea/Documents/algos/insertion_sort/InsertionSort.h
+1784638493 /home/invatamintulcea/Documents/algos/insertion_sort/InsertionSort.h
 	<vector>
 	<string>
 	"BaseSort.h"
 
-1783574167 source:/home/invatamintulcea/Documents/algos/selection_sort/SelectionSort.cpp
+1784638586 source:/home/invatamintulcea/Documents/algos/selection_sort/SelectionSort.cpp
 	<vector>
 	"SelectionSort.h"
 
-1783574149 /home/invatamintulcea/Documents/algos/selection_sort/SelectionSort.h
+1784638541 /home/invatamintulcea/Documents/algos/selection_sort/SelectionSort.h
 	<vector>
 	<string>
 	"BaseSort.h"
@@ -81,13 +82,13 @@
 1783526963 source:/home/invatamintulcea/Documents/algos/utils/VectorOperations.cpp
 	"VectorOperations.h"
 
-1784116952 /home/invatamintulcea/Documents/algos/utils/VectorOperations.h
+1784639665 /home/invatamintulcea/Documents/algos/utils/VectorOperations.h
 	<iostream>
 	<vector>
 	<string>
 	<sstream>
 
-1784392269 source:/home/invatamintulcea/Documents/algos/testers/SortingTester.cpp
+1784638676 source:/home/invatamintulcea/Documents/algos/testers/SortingTester.cpp
 	<iostream>
 	<string>
 	<sstream>
@@ -97,6 +98,7 @@
 	"BubbleSort.h"
 	"SelectionSort.h"
 	"MergeSort.h"
+	"QuickSort.h"
 	"PVAFile.h"
 	"VectorOperations.h"
 	"BaseSort.h"
@@ -111,13 +113,13 @@
 	"PVAFile.h"
 	"VectorOperations.h"
 
-1783690204 source:/home/invatamintulcea/Documents/algos/merge_sort/MergeSort.cpp
+1784638605 source:/home/invatamintulcea/Documents/algos/merge_sort/MergeSort.cpp
 	<vector>
 	<string>
 	<cmath>
 	"MergeSort.h"
 
-1783689961 /home/invatamintulcea/Documents/algos/merge_sort/MergeSort.h
+1784638568 /home/invatamintulcea/Documents/algos/merge_sort/MergeSort.h
 	<vector>
 	<string>
 	"BaseSort.h"
@@ -126,7 +128,7 @@
 	"EuclidGCD.h"
 	"Algorithm.h"
 
-1784121864 /home/invatamintulcea/Documents/algos/euclid_gcd/EuclidGCD.h
+1784631239 /home/invatamintulcea/Documents/algos/euclid_gcd/EuclidGCD.h
 	"Algorithm.h"
 
 1783882450 source:/home/invatamintulcea/Documents/algos/algorithm/Algorithm.cpp
@@ -223,7 +225,7 @@
 1784400525 /home/invatamintulcea/Documents/algos/testers/ShowSchedulerTester.h
 	<string>
 
-1784539754 source:/home/invatamintulcea/Documents/algos/lis_n2/LISN2.cpp
+1784540663 source:/home/invatamintulcea/Documents/algos/lis_n2/LISN2.cpp
 	<iostream>
 	<string>
 	<algorithm>
@@ -236,4 +238,50 @@
 	"Algorithm.h"
 
 1784539831 /home/invatamintulcea/Documents/algos/testers/LISTester.h
+
+1784540904 source:/home/invatamintulcea/Documents/algos/testers/LISTester.cpp
+	<iostream>
+	<string>
+	<sstream>
+	<vector>
+	"LISTester.h"
+	"LISN2.h"
+	"VectorOperations.h"
+
+1784633135 source:/home/invatamintulcea/Documents/algos/testers/Knapsack01Tester.cpp
+	<iostream>
+	<string>
+	<sstream>
+	<vector>
+	"Knapsack01.h"
+	"Knapsack01Tester.h"
+	"PVAFile.h"
+	"VectorOperations.h"
+
+1784634764 source:/home/invatamintulcea/Documents/algos/knapsack_01/Knapsack01.cpp
+	<utility>
+	<stdexcept>
+	<algorithm>
+	"Knapsack01.h"
+	"Algorithm.h"
+
+1784631329 /home/invatamintulcea/Documents/algos/knapsack_01/Knapsack01.h
+	<vector>
+	<map>
+	<utility>
+	"Algorithm.h"
+
+1784548817 /home/invatamintulcea/Documents/algos/testers/Knapsack01Tester.h
+	<string>
+
+1784641805 source:/home/invatamintulcea/Documents/algos/quick_sort/QuickSort.cpp
+	<vector>
+	<string>
+	"QuickSort.h"
+	"VectorOperations.h"
+
+1784639276 /home/invatamintulcea/Documents/algos/quick_sort/QuickSort.h
+	<vector>
+	<string>
+	"BaseSort.h"
 

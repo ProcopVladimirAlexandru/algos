@@ -11,7 +11,7 @@ class BubbleSort : public BaseSort {
     public:
         BubbleSort(const char * uid);
         BubbleSort(std::string uid);
-        std::vector<long double> * get_sorted_vector(std::vector<long double> &v, bool ascending);
+        std::vector<long double> get_sorted_vector(std::vector<long double> &v, bool ascending);
 };
 
 #endif

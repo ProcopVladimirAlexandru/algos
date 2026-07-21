@@ -8,8 +8,8 @@ InsertionSort::InsertionSort(const char * uid) : BaseSort(uid) {};
 
 InsertionSort::InsertionSort(std::string uid) :  BaseSort(uid) {};
 
-std::vector<long double> * InsertionSort::get_sorted_vector(std::vector<long double> &v, bool ascending) {
-    std::vector<long double> & result = *(new std::vector<long double>(v));
+std::vector<long double> InsertionSort::get_sorted_vector(std::vector<long double> &v, bool ascending) {
+    std::vector<long double> result(v);
     long long n = result.size();
 
     for (long long i = 1; i < n; ++i) {
@@ -24,5 +24,5 @@ std::vector<long double> * InsertionSort::get_sorted_vector(std::vector<long dou
         }
     }
 
-    return &result;
+    return result;
 }

@@ -12,6 +12,7 @@
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
+					<Add option="-std=c++20" />
 					<Add option="-g" />
 					<Add directory="base_sort" />
 					<Add directory="binary_search" />
@@ -26,6 +27,9 @@
 					<Add directory="sieve_of_eratosthenes" />
 					<Add directory="merge_sort" />
 					<Add directory="lis_n2" />
+					<Add directory="knapsack_01" />
+					<Add directory="quick_sort" />
+					<Add directory="show_scheduler" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -92,6 +96,12 @@
 		<Unit filename="insertion_sort/InsertionSort.h">
 			<Option glob="2547989141" />
 		</Unit>
+		<Unit filename="knapsack_01/Knapsack01.cpp">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="knapsack_01/Knapsack01.h">
+			<Option glob="2547989141" />
+		</Unit>
 		<Unit filename="lis_n2/LISN2.cpp">
 			<Option glob="2547989141" />
 		</Unit>
@@ -105,6 +115,12 @@
 			<Option glob="2547989141" />
 		</Unit>
 		<Unit filename="merge_sort/MergeSort.h">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="quick_sort/QuickSort.cpp">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="quick_sort/QuickSort.h">
 			<Option glob="2547989141" />
 		</Unit>
 		<Unit filename="selection_sort/SelectionSort.cpp">
@@ -137,6 +153,12 @@
 		<Unit filename="testers/GCDTester.h">
 			<Option glob="2547989141" />
 		</Unit>
+		<Unit filename="testers/Knapsack01Tester.cpp">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="testers/Knapsack01Tester.h">
+			<Option glob="2547989141" />
+		</Unit>
 		<Unit filename="testers/LISTester.cpp">
 			<Option glob="2547989141" />
 		</Unit>
@@ -167,8 +189,12 @@
 		<Unit filename="testers/SortingTester.h">
 			<Option glob="2547989141" />
 		</Unit>
+		<Unit filename="tests/continuous_knapsack_tests.txt" />
 		<Unit filename="tests/gcd_tests.txt" />
+		<Unit filename="tests/knapsack_01_tests.txt" />
+		<Unit filename="tests/primes_less_than_n_tests.txt" />
 		<Unit filename="tests/search_tests.txt" />
+		<Unit filename="tests/show_scheduler_tests.txt" />
 		<Unit filename="tests/sorting_tests.txt" />
 		<Unit filename="utils/PVAFile.cpp">
 			<Option glob="2547989141" />

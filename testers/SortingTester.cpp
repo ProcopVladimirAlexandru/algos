@@ -8,6 +8,7 @@
 #include "BubbleSort.h"
 #include "SelectionSort.h"
 #include "MergeSort.h"
+#include "QuickSort.h"
 #include "PVAFile.h"
 #include "VectorOperations.h"
 #include "BaseSort.h"
@@ -46,10 +47,11 @@ void SortingTester::test(std::string input_file_path) {
             InsertionSort insertion_sort("InsertionSort");
             SelectionSort selection_sort("SelectionSort");
             MergeSort merge_sort("MergeSort");
-            std::vector<BaseSort *> sort_objects_vector = {&bubble_sort, &insertion_sort, &selection_sort, &merge_sort};
+            QuickSort quick_sort("QuickSort");
+            std::vector<BaseSort *> sort_objects_vector = {&bubble_sort, &insertion_sort, &selection_sort, &merge_sort, &quick_sort};
             for (auto sort_object : sort_objects_vector) {
-                std::vector<long double> * sorted_vector = sort_object->get_sorted_vector(input_vector, ascending);
-                if ((*sorted_vector) != expected_sorted_vector) {
+                std::vector<long double> sorted_vector = sort_object->get_sorted_vector(input_vector, ascending);
+                if (sorted_vector != expected_sorted_vector) {
                     std::cerr << sort_object->uid << " failed test" << std::endl;
                 }
                 else {
