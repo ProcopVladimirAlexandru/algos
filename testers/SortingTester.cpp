@@ -38,7 +38,7 @@ void SortingTester::test(std::string input_file_path) {
             }
         }
         else if (i % 3 == 2) {
-            std::cout << "TEST NUMBER " << (i + 1) / 3 << ": sorting "
+            std::cout << "TEST NUMBER " << (i + 1) / 3 << ": sorting" << (ascending?" ASCENDING ":" DESCENDING ")
                 << (vector_to_string<long double>(input_vector)) << std::endl;
             expected_sorted_vector.clear();
             pva_file.parse_line_to_vector_long_double(expected_sorted_vector, ',');
