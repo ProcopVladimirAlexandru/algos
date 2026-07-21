@@ -5,6 +5,7 @@
 #include "testers/ContinuousKnapsackTester.h"
 #include "testers/ShowSchedulerTester.h"
 #include "testers/LISTester.h"
+#include "testers/Knapsack01Tester.h"
 
 
 int main() {
@@ -16,5 +17,6 @@ int main() {
     ContinuousKnapsackTester().test("./tests/continuous_knapsack_tests.txt");
     ShowSchedulerTester().test("./tests/show_scheduler_tests.txt");
     LISTester().test();
+    Knapsack01Tester().test("./tests/knapsack_01_tests.txt");
     return 0;
 }
