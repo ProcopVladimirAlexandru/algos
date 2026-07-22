@@ -8,6 +8,7 @@
 #include "testers/Knapsack01Tester.h"
 #include "testers/PermutationsTester.h"
 #include "testers/CombinationsTester.h"
+#include "testers/ArrangementsTester.h"
 
 
 int main() {
@@ -22,6 +23,7 @@ int main() {
     Knapsack01Tester().test("./tests/knapsack_01_tests.txt");
     PermutationsTester().test();
     CombinationsTester().test();
+    ArrangementsTester().test();
 
     return 0;
 }

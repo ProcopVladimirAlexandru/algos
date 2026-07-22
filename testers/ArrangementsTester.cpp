@@ -1,15 +1,15 @@
 #include <iostream>
 #include <vector>
 
-#include "CombinationsTester.h"
-#include "Combinations.h"
+#include "ArrangementsTester.h"
+#include "Arrangements.h"
 #include "VectorOperations.h"
 #include "PVAMath.h"
 
 
-void CombinationsTester::test() {
+void ArrangementsTester::test() {
 
-    Combinations combs("CombinationsGenerator");
+    Arrangements arrangs("ArrangementsGenerator");
 
     std::vector<std::vector<unsigned long>> input_vs {
         {0},
@@ -37,37 +37,38 @@ void CombinationsTester::test() {
         unsigned long n = input_vs[i].size();
         unsigned long k = input_ks[i];
 
-        std::cout << "TEST NUMBER " << i << ": Combinations(n = " << n << ", k = " << k << ")" << std::endl;
-        auto combinations = combs.get_combinations(v, k);
+        std::cout << "TEST NUMBER " << i << ": Arrangements(n = " << n << ", k = " << k << ")" << std::endl;
+        auto arrangements = arrangs.get_arrangements(v, k);
         bool passed = true;
-        if (combinations.size() != (PVAMath::factorial(n)/(PVAMath::factorial(n - k) * PVAMath::factorial(k)))) {
-            std::cerr << combs.uid << " failed test" << std::endl;
+        if (arrangements.size() != (PVAMath::factorial(n)/PVAMath::factorial(n - k))) {
+            std::cerr << arrangs.uid << " failed cardinality test" << std::endl;
             print_vector(v, true);
             continue;
         }
 
-        for (unsigned long ci = 0; ci < combinations.size(); ci++) {
-            if (combinations[ci].size() != k) {
+        for (unsigned long ai = 0; ai < arrangements.size(); ai++) {
+            if (arrangements[ai].size() != k) {
                 passed = false;
                 break;
             }
-            if (!are_vector_elements_unique(combinations[ci])) {
+            if (!are_vector_elements_unique(arrangements[ai])) {
                 passed = false;
                 break;
             }
-            for (unsigned long cj = ci + 1; cj < combinations.size(); cj++) {
-                if (are_vectors_equal(combinations[ci], combinations[cj])) {
+            for (unsigned long aj = ai + 1; aj < arrangements.size() - 1; aj++) {
+                if (are_vectors_equal(arrangements[ai], arrangements[aj])) {
                     passed = false;
                     break;
                 }
             }
         }
         if (passed) {
-            std::cout << combs.uid << " passed test" << std::endl;
+            std::cout << arrangs.uid << " passed test" << std::endl;
         }
         else {
-            std::cerr << combs.uid << " failed test" << std::endl;
+            std::cerr << arrangs.uid << " failed test" << std::endl;
             print_vector(input_vs[i], true);
+            break;
         }
         std::cout << std::endl;
     }

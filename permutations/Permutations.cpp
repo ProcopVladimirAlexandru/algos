@@ -12,7 +12,7 @@ Permutations::Permutations(std::string uid) :  Algorithm(uid) {};
 std::vector<std::vector<unsigned long>> Permutations::get_permutations(std::vector<unsigned long> & v, unsigned long current_index) {
     unsigned long n = v.size();
     if (current_index == n - 1) {
-        std::vector<unsigned long> single_permutation({current_index});
+        std::vector<unsigned long> single_permutation({v[current_index]});
         return std::vector<std::vector<unsigned long>>({single_permutation});
     }
     if (current_index >= n) {

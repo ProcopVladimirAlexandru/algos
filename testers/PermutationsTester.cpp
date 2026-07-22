@@ -49,7 +49,7 @@ void PermutationsTester::test() {
                 passed = false;
                 break;
             }
-            for (unsigned long pj = pi + 1; pj < permutations.size() - 1; pj++) {
+            for (unsigned long pj = pi + 1; pj < permutations.size(); pj++) {
                 if (are_vectors_equal(permutations[pi], permutations[pj])) {
                     this->_report_test_result(perms, inputs[i], false);
                     passed = false;
