@@ -5,7 +5,14 @@
 #include <vector>
 #include <string>
 #include <sstream>
+#include <unordered_set>
 
+
+template<class T>
+bool are_vector_elements_unique(std::vector<T> & v) {
+    std::unordered_set<T> us(v.begin(), v.end());
+    return us.size() == v.size();
+}
 
 template<class T>
 bool are_vectors_equal(std::vector<T> & v, std::vector<T> & u) {

@@ -6,6 +6,7 @@
 #include "testers/ShowSchedulerTester.h"
 #include "testers/LISTester.h"
 #include "testers/Knapsack01Tester.h"
+#include "testers/PermutationsTester.h"
 
 
 int main() {
@@ -18,5 +19,7 @@ int main() {
     ShowSchedulerTester().test("./tests/show_scheduler_tests.txt");
     LISTester().test();
     Knapsack01Tester().test("./tests/knapsack_01_tests.txt");
+    PermutationsTester().test();
+
     return 0;
 }
