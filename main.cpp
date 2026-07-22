@@ -7,6 +7,7 @@
 #include "testers/LISTester.h"
 #include "testers/Knapsack01Tester.h"
 #include "testers/PermutationsTester.h"
+#include "testers/CombinationsTester.h"
 
 
 int main() {
@@ -20,6 +21,7 @@ int main() {
     LISTester().test();
     Knapsack01Tester().test("./tests/knapsack_01_tests.txt");
     PermutationsTester().test();
+    CombinationsTester().test();
 
     return 0;
 }

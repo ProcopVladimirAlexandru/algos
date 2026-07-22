@@ -44,7 +44,7 @@ void PermutationsTester::test() {
                 passed = false;
                 break;
             }
-            if (!are_vector_elements_unique(inputs[i])) {
+            if (!are_vector_elements_unique(permutations[pi])) {
                 this->_report_test_result(perms, inputs[i], false);
                 passed = false;
                 break;
