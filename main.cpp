@@ -9,6 +9,7 @@
 #include "testers/PermutationsTester.h"
 #include "testers/CombinationsTester.h"
 #include "testers/ArrangementsTester.h"
+#include "testers/SubsetsTester.h"
 
 
 int main() {
@@ -24,6 +25,7 @@ int main() {
     PermutationsTester().test();
     CombinationsTester().test();
     ArrangementsTester().test();
+    SubsetsTester().test();
 
     return 0;
 }

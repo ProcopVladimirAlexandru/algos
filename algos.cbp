@@ -30,6 +30,9 @@
 					<Add directory="knapsack_01" />
 					<Add directory="quick_sort" />
 					<Add directory="show_scheduler" />
+					<Add directory="permutations" />
+					<Add directory="combinations" />
+					<Add directory="arrangements" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -60,6 +63,12 @@
 		<Unit filename="algorithm/Algorithm.h">
 			<Option glob="2547989141" />
 		</Unit>
+		<Unit filename="arrangements/Arrangements.cpp">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="arrangements/Arrangements.h">
+			<Option glob="2547989141" />
+		</Unit>
 		<Unit filename="base_sort/BaseSort.cpp">
 			<Option glob="2547989141" />
 		</Unit>
@@ -76,6 +85,12 @@
 			<Option glob="2547989141" />
 		</Unit>
 		<Unit filename="bubble_sort/BubbleSort.h">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="combinations/Combinations.cpp">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="combinations/Combinations.h">
 			<Option glob="2547989141" />
 		</Unit>
 		<Unit filename="continuous_knapsack/ContinuousKnapsack.cpp">
@@ -117,6 +132,12 @@
 		<Unit filename="merge_sort/MergeSort.h">
 			<Option glob="2547989141" />
 		</Unit>
+		<Unit filename="permutations/Permutations.cpp">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="permutations/Permutations.h">
+			<Option glob="2547989141" />
+		</Unit>
 		<Unit filename="quick_sort/QuickSort.cpp">
 			<Option glob="2547989141" />
 		</Unit>
@@ -141,6 +162,18 @@
 		<Unit filename="sieve_of_eratosthenes/SieveOfErathosthenes.h">
 			<Option glob="2547989141" />
 		</Unit>
+		<Unit filename="testers/ArrangementsTester.cpp">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="testers/ArrangementsTester.h">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="testers/CombinationsTester.cpp">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="testers/CombinationsTester.h">
+			<Option glob="2547989141" />
+		</Unit>
 		<Unit filename="testers/ContinuousKnapsackTester.cpp">
 			<Option glob="2547989141" />
 		</Unit>
@@ -163,6 +196,12 @@
 			<Option glob="2547989141" />
 		</Unit>
 		<Unit filename="testers/LISTester.h">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="testers/PermutationsTester.cpp">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="testers/PermutationsTester.h">
 			<Option glob="2547989141" />
 		</Unit>
 		<Unit filename="testers/PrimesLessThanNTester.cpp">
@@ -200,6 +239,12 @@
 			<Option glob="2547989141" />
 		</Unit>
 		<Unit filename="utils/PVAFile.h">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="utils/PVAMath.cpp">
+			<Option glob="2547989141" />
+		</Unit>
+		<Unit filename="utils/PVAMath.h">
 			<Option glob="2547989141" />
 		</Unit>
 		<Unit filename="utils/VectorOperations.cpp">
