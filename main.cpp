@@ -10,6 +10,7 @@
 #include "testers/CombinationsTester.h"
 #include "testers/ArrangementsTester.h"
 #include "testers/SubsetsTester.h"
+#include "testers/PVAMathTester.h"
 
 
 int main() {
@@ -26,6 +27,7 @@ int main() {
     CombinationsTester().test();
     ArrangementsTester().test();
     SubsetsTester().test();
+    PVAMathTester().test();
 
     return 0;
 }
