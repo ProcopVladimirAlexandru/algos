@@ -14,7 +14,7 @@ void LISTester::test() {
 
     std::vector<std::string> inputs{"", "ababczde", "ababczd", "a", "ad", "ruacbdzopb"};
     std::vector<std::string> expected_results{"", "abcde", "abcz", "a", "ad", "abdop"};
-    for (long long i = 0; i < inputs.size(); ++i) {
+    for (unsigned long i = 0; i < inputs.size(); ++i) {
         std::cout << "TEST NUMBER " << i << ": LISN2(\"" << inputs[i] << "\")" << std::endl;
         std::string result_lis = lis_n2.get_lis(inputs[i]);
         if (result_lis != expected_results[i]) {

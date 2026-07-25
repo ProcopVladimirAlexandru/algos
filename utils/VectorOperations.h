@@ -66,7 +66,7 @@ void print_vector(std::vector<T> & v, bool new_line) {
 }
 
 template<class T>
-void swap_vector_elements(std::vector<T> &v, unsigned long i, unsigned long j) {
+void swap_vector_elements(std::vector<T> &v, long long i, long long j) {
     auto aux = v[i];
     v[i] = v[j];
     v[j] = aux;

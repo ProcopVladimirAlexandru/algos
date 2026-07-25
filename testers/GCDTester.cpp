@@ -15,7 +15,7 @@ void GCDTester::test(std::string input_file_path) {
     uint i = 0;
     unsigned long a;
     unsigned long b;
-    unsigned long expected_gcd;
+    long long expected_gcd;
     while (!pva_file.eof()) {
         if (i % 3 == 0) {
             a = pva_file.parse_line_to_unsigned_long();

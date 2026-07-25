@@ -40,7 +40,6 @@ std::vector<long double> ContinuousKnapsack::get_quantities(long double W, std::
     long double current_weight = 0.0;
     for (unsigned long i = 0; i < n; ++i){
         unsigned long el_index = tuples.at(i).second;
-        long double v = values[el_index];
         long double w = weights[el_index];
         long double weight_diff = W - current_weight;
         if (weight_diff > w) {
