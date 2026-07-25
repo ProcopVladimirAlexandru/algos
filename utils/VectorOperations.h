@@ -30,6 +30,18 @@ bool are_vectors_equal(std::vector<T> & v, std::vector<T> & u) {
 }
 
 template<class T>
+bool are_vectors_disjoint(std::vector<T> & v, std::vector<T> & u) {
+    for (unsigned long i = 0; i < v.size(); i++) {
+        for (unsigned long j = 0; j < u.size(); j++) {
+            if (v[i] != u[j]) {
+                return false;
+            }
+        }
+    }
+    return true;
+}
+
+template<class T>
 std::string vector_to_string(std::vector<T> & v) {
     long long n = v.size();
     std::ostringstream outstream;

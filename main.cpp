@@ -11,10 +11,11 @@
 #include "testers/ArrangementsTester.h"
 #include "testers/SubsetsTester.h"
 #include "testers/PVAMathTester.h"
+#include "testers/PartitionsTester.h"
 
 
 int main() {
-
+    PVAMathTester().test();
     SortingTester().test("./tests/sorting_tests.txt");
     SearchTester().test("./tests/search_tests.txt");
     GCDTester().test("./tests/gcd_tests.txt");
@@ -27,7 +28,7 @@ int main() {
     CombinationsTester().test();
     ArrangementsTester().test();
     SubsetsTester().test();
-    PVAMathTester().test();
+    PartitionsTester().test();
 
     return 0;
 }
