@@ -12,12 +12,11 @@ Partitions::Partitions(const char * uid) : Algorithm(uid) {};
 Partitions::Partitions(std::string uid) :  Algorithm(uid) {};
 
 std::vector<std::vector<unsigned long>> Partitions::_get_subset_indices(
-    std::vector<unsigned long> & v,
+    unsigned long n,
     unsigned long current_index,
     unsigned long start_index
 )
 {
-    unsigned long n = v.size();
     if (start_index >= current_index) {
         throw std::invalid_argument("invalid args, start index >= current index");
     }
@@ -25,18 +24,20 @@ std::vector<std::vector<unsigned long>> Partitions::_get_subset_indices(
         throw std::invalid_argument("start_index >= n - 1");
     }
 
+    std::vector<std::vector<unsigned long>> current_subsets_indices;
     if (current_index == n) {
-        return std::vector<std::vector<unsigned long>>();
+        std::vector<unsigned long> empty_vector;
+        current_subsets_indices.push_back(empty_vector);
+        return current_subsets_indices;
     }
 
-    std::vector<std::vector<unsigned long>> current_subsets_indices;
-    for (auto & higher_subset_indices : this->_get_subset_indices(v, current_index + 1, start_index)) {
+    for (auto & higher_subset_indices : this->_get_subset_indices(n, current_index + 1, start_index)) {
         std::vector<unsigned long> current_subset_indices;
         if (current_index == start_index + 1) {
-            current_subset_indices.push_back(v[start_index]);
+            current_subset_indices.push_back(start_index);
         }
         std::vector<unsigned long> current_subset_indices_with_current(current_subset_indices);
-        current_subset_indices_with_current.push_back(v[current_index]);
+        current_subset_indices_with_current.push_back(current_index);
         current_subset_indices_with_current.insert(current_subset_indices_with_current.end(), higher_subset_indices.begin(), higher_subset_indices.end());
         current_subsets_indices.push_back(current_subset_indices_with_current);
 
@@ -85,7 +86,7 @@ std::vector<std::vector<std::vector<unsigned long>>> Partitions::get_partitions(
         return all_partitions;
     }
 
-    for(auto & v1_indices : this->_get_subset_indices(v, 1, 0)) {
+    for(auto & v1_indices : this->_get_subset_indices(n, 1, 0)) {
         std::pair<std::vector<unsigned long>, std::vector<unsigned long>> v1_v2 = this->_partition_vector_by_indices(v, v1_indices);
         auto v1 = v1_v2.first;
         auto v2 = v1_v2.second;

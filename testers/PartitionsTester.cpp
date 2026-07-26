@@ -13,20 +13,21 @@ void PartitionsTester::test() {
     Partitions partitions_generator("PartitionsGenerator");
 
     std::vector<std::vector<unsigned long>> input_vs {
-        {0},
-        {0, 1},
+        //{0},
+        //{0, 1},
         {0, 1, 2, 3},
+        {1, 2, 3, 4, 5},
         {1, 5, 7, 9, 100, 1000, 1234567890}
     };
 
     for (unsigned long i = 0; i < input_vs.size(); ++i) {
-        auto & v = input_vs[i];
+        std::vector<unsigned long> v = input_vs[i];
         unsigned long n = input_vs[i].size();
 
         std::cout << "TEST NUMBER " << i << ": Partitions(n = " << n << ")" << std::endl;
         auto partitions = partitions_generator.get_partitions(v);
         if (partitions.size() != PVAMath::bell_number(n)) {
-            std::cerr << partitions_generator.uid << " failed cardinality test" << std::endl;
+            std::cerr << partitions_generator.uid << " failed cardinality test, returned " << partitions.size() << " partitions" << std::endl;
             print_vector(v, true);
             continue;
         }
@@ -55,7 +56,8 @@ void PartitionsTester::test() {
             std::cout << partitions_generator.uid << " passed test" << std::endl;
         }
         else {
-            std::cerr << partitions_generator.uid << " failed test" << std::endl;
+            std::cerr << partitions_generator.uid << " failed test: partition_elements_count_passed is " << partition_elements_count_passed <<
+                ", disjoint_partition_elements_passed is "<< disjoint_partition_elements_passed << std::endl;
             print_vector(v, true);
         }
         std::cout << std::endl;

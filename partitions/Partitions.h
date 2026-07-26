@@ -13,7 +13,7 @@ class Partitions : public Algorithm {
         std::vector<std::vector<std::vector<unsigned long>>> get_partitions(std::vector<unsigned long> & v);
     private:
         std::vector<std::vector<unsigned long>> _get_subset_indices(
-            std::vector<unsigned long> & v,
+            unsigned long n,
             unsigned long current_index,
             unsigned long start_index
         );
