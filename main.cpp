@@ -12,6 +12,7 @@
 #include "testers/SubsetsTester.h"
 #include "testers/PVAMathTester.h"
 #include "testers/PartitionsTester.h"
+#include "testers/TowersOfHanoiTester.h"
 
 
 int main() {
@@ -29,6 +30,7 @@ int main() {
     ArrangementsTester().test();
     SubsetsTester().test();
     PartitionsTester().test();
+    TowersOfHanoiTester().test();
 
     return 0;
 }
