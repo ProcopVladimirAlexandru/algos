@@ -13,6 +13,7 @@
 #include "testers/PVAMathTester.h"
 #include "testers/PartitionsTester.h"
 #include "testers/TowersOfHanoiTester.h"
+#include "testers/LongestCommonSubsequenceTester.h"
 
 
 int main() {
@@ -31,6 +32,7 @@ int main() {
     SubsetsTester().test();
     PartitionsTester().test();
     TowersOfHanoiTester().test();
+    LongestCommonSubsequenceTester().test();
 
     return 0;
 }
