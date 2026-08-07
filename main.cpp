@@ -14,6 +14,7 @@
 #include "testers/PartitionsTester.h"
 #include "testers/TowersOfHanoiTester.h"
 #include "testers/LongestCommonSubsequenceTester.h"
+#include "testers/DjikstraTester.h"
 
 
 int main() {
@@ -33,6 +34,7 @@ int main() {
     PartitionsTester().test();
     TowersOfHanoiTester().test();
     LongestCommonSubsequenceTester().test();
+    DjikstraTester().test();
 
     return 0;
 }
